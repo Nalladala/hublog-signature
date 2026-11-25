@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HubLog Signature Generator</title>
+<style>
+  body{margin:0;padding:24px;background:#f2f2f2;font-family:Arial,Helvetica,sans-serif;}
+  .toolbar{max-width:880px;margin:0 0 16px;font-size:14px;color:#333;}
+  .toolbar button{background:#0a4d14;color:#fff;border:0;border-radius:6px;padding:9px 18px;font-size:14px;cursor:pointer;margin-right:10px;}
+  .toolbar button:hover{background:#0d6a1c;}
+  #msg{color:#0a4d14;font-weight:bold;}
+  .sigwrap{background:#ffffff;padding:20px;display:inline-block;}
+  @media print{.toolbar{display:none;}}
+  #form{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px 16px;margin-bottom:16px;}
+  #form label{display:block;font-size:12px;color:#555;margin-bottom:3px;}
+  #form input{width:100%;box-sizing:border-box;padding:8px;border:1px solid #bbb;border-radius:5px;font-size:14px;}
+  #form h3{grid-column:1/-1;margin:8px 0 0;font-size:14px;color:#0a4d14;border-bottom:1px solid #ddd;padding-bottom:4px;}
+</style>
+</head>
+<body>
+
+<!--
+=====================================================================
+  HOW TO EDIT  (everything you normally change is in the CONFIG below)
+  1. Edit the values inside the <script> CONFIG block (name, phones,
+     email, address, website, LinkedIn / YouTube / X links).
+  2. Images live in the "images/" folder next to this file:
+        logo.png  logo-original.png  bg-email.png
+        icon-phone.png  icon-email.png  icon-location.png  icon-web.png
+        icon-linkedin.png  icon-youtube.png  icon-x.png
+  3. FOR GMAIL: upload the images folder to a public https location
+     (your website, GitHub Pages, etc.) and set  imageBase  to that URL,
+     e.g.  "https://www.thehublog.com/signature/images/"
+  4. Click "Copy signature" below, then paste in
+     Gmail > Settings > See all settings > Signature.
+=====================================================================
+-->
+
+<div class="toolbar">
+  <h2 style="margin:0 0 6px;color:#0a4d14;">HubLog Email Signature Generator</h2>
+  <p style="margin:0 0 14px;">Fill in your details. The signature updates below. Then click <b>Copy signature</b> and paste it in Gmail &gt; Settings &gt; See all settings &gt; Signature.</p>
+  <div id="form"></div>
+  <button type="button" id="copyBtn">Copy signature</button><span id="msg"></span>
+</div>
+<div class="sigwrap">
+<!-- ============ SIGNATURE START (this part is copied) ============ -->
+<table id="signature" cellpadding="0" cellspacing="0" border="0" width="880" height="180" bgcolor="#0b4d14" background="https://nalladala.github.io/hublog-signature/bg-email.png" data-bg="bg-email.png" style="width:880px;height:180px;border-collapse:collapse;background-color:#0b4d14;background-image:url(https://nalladala.github.io/hublog-signature/bg-email.png);background-repeat:no-repeat;border-radius:18px;font-family:Arial,Helvetica,sans-serif;">
+ <tr><td style="padding:0;">
+  <table cellpadding="0" cellspacing="0" border="0" width="880" style="width:880px;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
+   <tr><td colspan="6" height="22" style="height:22px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+   <tr>
+    <!-- LOGO -->
+    <td width="240" rowspan="2" valign="middle" align="center" style="width:240px;padding:0 12px 0 24px;">
+      <img src="https://nalladala.github.io/hublog-signature/logo.png" data-img="logo.png" width="200" alt="HubLog" style="display:block;border:0;width:200px;height:auto;margin:0 auto;">
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:12px;letter-spacing:3.5px;font-weight:bold;color:#ffffff;text-align:center;padding-top:7px;">LOGISTICS&nbsp;SOLUTIONS</div>
+    </td>
+    <td width="2" style="width:2px;" bgcolor="#f5b800"><div style="width:2px;height:96px;line-height:96px;font-size:1px;background:#f5b800;">&nbsp;</div></td>
+    <!-- NAME + TITLE -->
+    <td width="330" valign="top" style="width:330px;padding:2px 0 0 20px;">
+      <div data-f="name" style="font-family:Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#ffffff;">Susai Pragasam</div>
+      <div data-f="title" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#ffffff;padding-top:3px;">Chief Operating Officer (COO)</div>
+    </td>
+    <!-- TAGLINE + WEB + SOCIAL -->
+    <td width="270" valign="top" style="width:270px;padding:0 0 0 20px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td data-f="tagline" style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;font-style:italic;font-weight:bold;color:#ffffff;border-bottom:2px solid #f5b800;padding:0 0 4px 0;">Global Logistics Partner</td></tr></table>
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:10px;"><tr>
+        <td valign="middle" style="padding-right:6px;"><a data-f-href="websiteUrl" href="https://www.thehublog.com"><img src="https://nalladala.github.io/hublog-signature/icon-web.png" data-img="icon-web.png" width="18" height="18" alt="Website" style="display:block;border:0;width:18px;height:18px;"></a></td>
+        <td valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;padding-right:10px;"><a data-f-href="websiteUrl" data-f="website" href="https://www.thehublog.com" style="color:#ffffff;text-decoration:none;"><span style="color:#ffffff;">www.thehublog.com</span></a></td>
+        <td width="2" style="width:2px;" bgcolor="#f5b800"><div style="width:2px;height:22px;line-height:22px;font-size:1px;background:#f5b800;">&nbsp;</div></td><td width="10" style="width:10px;font-size:1px;line-height:1px;">&nbsp;</td>
+        <td valign="middle" style="padding-right:6px;"><a data-f-href="linkedin" href="https://www.linkedin.com/company/hublog" target="_blank"><img src="https://nalladala.github.io/hublog-signature/icon-linkedin.png" data-img="icon-linkedin.png" width="20" height="20" alt="LinkedIn" style="display:block;border:0;width:20px;height:20px;"></a></td>
+        <td valign="middle" style="padding-right:6px;"><a data-f-href="youtube" href="https://www.youtube.com/@hublog" target="_blank"><img src="https://nalladala.github.io/hublog-signature/icon-youtube.png" data-img="icon-youtube.png" width="20" height="20" alt="YouTube" style="display:block;border:0;width:20px;height:20px;"></a></td>
+        <td valign="middle"><a data-f-href="x" href="https://x.com/hublog" target="_blank"><img src="https://nalladala.github.io/hublog-signature/icon-x.png" data-img="icon-x.png" width="20" height="20" alt="X" style="display:block;border:0;width:20px;height:20px;"></a></td>
+      </tr></table>
+    </td>
+    <td width="4" style="width:4px;font-size:1px;">&nbsp;</td>
+   </tr>
+   <tr>
+    <!-- CONTACT ROW -->
+    <td colspan="3" valign="bottom" style="padding:8px 0 0 20px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:10.5px;line-height:14px;"><tr>
+        <td valign="middle" style="padding-right:6px;"><img src="https://nalladala.github.io/hublog-signature/icon-phone.png" data-img="icon-phone.png" width="16" height="16" alt="Phone" style="display:block;border:0;width:16px;height:16px;"></td>
+        <td valign="middle" style="white-space:nowrap;"><a data-f-href="phone1" href="tel:+966550438666" style="color:#ffffff;text-decoration:none;"><span data-f="phone1" style="color:#ffffff;">+966 550 438 666</span></a></td>
+        <td valign="middle" style="padding:0 8px;"><div style="width:1px;height:14px;background:#ffffff;font-size:1px;line-height:1px;">&nbsp;</div></td>
+        <td valign="middle" style="white-space:nowrap;padding-right:12px;"><a data-f-href="phone2" href="tel:+966539644611" style="color:#ffffff;text-decoration:none;"><span data-f="phone2" style="color:#ffffff;">+966 539 644 611</span></a></td>
+        <td valign="middle" style="padding:0 0 0 0;border-left:2px solid #f5b800;"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td style="padding:0 6px 0 10px;"><img src="https://nalladala.github.io/hublog-signature/icon-email.png" data-img="icon-email.png" width="16" height="16" alt="Email" style="display:block;border:0;width:16px;height:16px;"></td>
+        <td valign="middle" style="white-space:nowrap;padding-right:12px;"><a data-f-href="email" href="mailto:susai@thehublog.com" style="color:#ffffff;text-decoration:none;"><span data-f="email" style="color:#ffffff;">susai@thehublog.com</span></a></td></tr></table></td>
+        <td valign="middle" style="padding:0;border-left:2px solid #f5b800;"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td style="padding:0 6px 0 10px;"><img src="https://nalladala.github.io/hublog-signature/icon-location.png" data-img="icon-location.png" width="16" height="16" alt="Address" style="display:block;border:0;width:16px;height:16px;"></td>
+        <td valign="middle" style="white-space:nowrap;"><a data-f-href="mapUrl" href="https://www.google.com/maps/search/?api=1&query=Sitten+Street+Bin+Hamoud+Center+Jeddah+21499+Saudi+Arabia" target="_blank" style="color:#ffffff;text-decoration:none;"><span style="color:#ffffff;"><span data-f="address1">Sitten Street, Bin Hamoud Center,</span><br><span data-f="address2">Jeddah 21499, Saudi Arabia</span></span></a></td></tr></table></td>
+      </tr></table>
+    </td>
+   </tr>
+   <tr><td colspan="6" height="26" style="height:26px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+<!-- ============ SIGNATURE END ============ -->
+</div>
+
+<script>
+/* ===== DEFAULTS (company details are the same for everyone; edit once here) ===== */
+var CONFIG = {
+  "imageBase": "https://nalladala.github.io/hublog-signature/",
+  "name": "Susai Pragasam",
+  "title": "Chief Operating Officer (COO)",
+  "tagline": "Global Logistics Partner",
+  "phone1": "+966 550 438 666",
+  "phone2": "+966 539 644 611",
+  "email": "susai@thehublog.com",
+  "website": "www.thehublog.com",
+  "websiteUrl": "https://www.thehublog.com",
+  "address1": "Sitten Street, Bin Hamoud Center,",
+  "address2": "Jeddah 21499, Saudi Arabia",
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sitten+Street+Bin+Hamoud+Center+Jeddah+21499+Saudi+Arabia",
+  "linkedin": "https://www.linkedin.com/company/hublog",
+  "youtube": "https://www.youtube.com/@hublog",
+  "x": "https://x.com/hublog"
+};
+/* ================================================================================ */
+var FIELDS=[
+ ['h','Employee details'],
+ ['name','Full name'],['title','Job title'],['phone1','Phone 1'],['phone2','Phone 2 (leave empty to hide)'],['email','Email'],
+ ['h','Company details (same for everyone)'],
+ ['tagline','Tagline'],['website','Website text'],['websiteUrl','Website link'],['address1','Address line 1'],['address2','Address line 2'],['mapUrl','Google Maps link'],
+ ['linkedin','LinkedIn link'],['youtube','YouTube link'],['x','X (Twitter) link']
+];
+var sig=document.getElementById('signature');
+function apply(){
+  document.querySelectorAll('[data-f]').forEach(function(el){var k=el.getAttribute('data-f');if(CONFIG[k]!==undefined)el.textContent=CONFIG[k];});
+  document.querySelectorAll('[data-f-href]').forEach(function(el){
+    var k=el.getAttribute('data-f-href'),v=CONFIG[k];if(v===undefined)return;
+    if(k.indexOf('phone')===0)v='tel:'+v.replace(/[^0-9+]/g,'');else if(k==='email')v='mailto:'+v;
+    el.setAttribute('href',v);});
+  var p2=document.querySelector('[data-f="phone2"]').closest('td'),show=CONFIG.phone2.trim()!=='';
+  p2.style.display=show?'':'none';if(p2.previousElementSibling)p2.previousElementSibling.style.display=show?'':'none';
+  document.querySelectorAll('[data-img]').forEach(function(el){el.setAttribute('src',CONFIG.imageBase+el.getAttribute('data-img'));});
+  sig.setAttribute('background',CONFIG.imageBase+'bg-email.png');sig.style.backgroundImage='url('+CONFIG.imageBase+'bg-email.png)';
+}
+var f=document.getElementById('form');
+FIELDS.forEach(function(x){
+  if(x[0]==='h'){var h=document.createElement('h3');h.textContent=x[1];f.appendChild(h);return;}
+  var d=document.createElement('div'),l=document.createElement('label'),i=document.createElement('input');
+  l.textContent=x[1];i.value=CONFIG[x[0]];i.addEventListener('input',function(){CONFIG[x[0]]=i.value;apply();});
+  d.appendChild(l);d.appendChild(i);f.appendChild(d);
+});
+apply();
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var r=document.createRange();r.selectNode(sig);var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+  var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+  document.getElementById('msg').textContent=ok?'Copied. Now paste it in Gmail > Signature.':'Press Ctrl+C to copy.';
+});
+</script>
+</body>
+</html>
